@@ -1,0 +1,40 @@
+api_version = "2026-04"
+
+[[extensions]]
+name = "ui-upsell-products"
+handle = "ui-upsell-products"
+type = "ui_extension"
+uid = "891a1343-2316-eab7-d206-b15e4dc0c4a130a5e9f8"
+
+[[extensions.targeting]]
+module = "./src/Checkout.jsx"
+target = "purchase.checkout.block.render"
+
+[extensions.capabilities]
+api_access = true
+
+[extensions.settings]
+
+  [[extensions.settings.fields]]
+  key = "section_title"
+  type = "single_line_text_field"
+  name = "Section Title"
+  description = "Heading shown above upsell products (default: 'We think you'll love these too!')"
+
+  [[extensions.settings.fields]]
+  key = "fallback_collection_handle"
+  type = "single_line_text_field"
+  name = "Fallback Collection Handle"
+  description = "Collection handle to show upsell products from when product-level metafields are not set (e.g. upsell-products)"
+
+  [[extensions.settings.fields]]
+  key = "max_products"
+  type = "number_integer"
+  name = "Maximum Products to Show"
+  description = "Maximum number of upsell products to display (default: 2)"
+
+  [[extensions.settings.fields]]
+  key = "default_discount_percent"
+  type = "number_integer"
+  name = "Default Discount Percent"
+  description = "Fallback discount % applied to upsell products that don't have the upsell_discount_percent metafield set (e.g. 10 for 10% off). Leave 0 for no default discount."
