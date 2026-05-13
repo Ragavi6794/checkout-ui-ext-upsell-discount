@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Shopify App Template - Extension only
 
 This is a template for building an [extension-only Shopify app](https://shopify.dev/docs/apps/build/app-extensions/build-extension-only-app). It contains the basics for building a Shopify app that uses only app extensions.
@@ -76,3 +77,6 @@ Open the URL generated in your console. Once you grant permission to the app, yo
 - [App extensions](https://shopify.dev/docs/apps/build/app-extensions)
 - [Extension only apps](https://shopify.dev/docs/apps/build/app-extensions/build-extension-only-app)
 - [Shopify CLI](https://shopify.dev/docs/apps/tools/cli)
+=======
+# checkout-ui-ext-upsell-discount
+>>>>>>> 912568c98abad9b8011c7329b2dd39705b37198e
